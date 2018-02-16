@@ -10,89 +10,153 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div id="page-wrap">
+<body id="page-wrap">
+    <div>
         <textarea id="header">FAKTURA</textarea>
         <div id="identity">
-            <textarea id="address">Ibrahim Yolbir
-                            Gåsebäcksv. 20
-                            252 27 HELSINGBORG</textarea>
+            <textarea id="address">
+                Ibrahim Yolbir
+                Gåsebäcksv. 20
+                252 27 HELSINGBORG</textarea>
             <div id="logo">
                 <img id="image" src="images/ricoh.png" alt="logo" />
-            </div>  
+            </div>
             <div style="clear:both"></div>
             <div id="customer">
-               <textarea id="customer-title">Ricoh Sverige AB
+                <textarea id="customer-title">Ricoh Sverige AB
                             c/o Steve Widget</textarea>
                 <table id="meta">
                     <tr>
                         <td class="meta-head">Faktura Nummer</td>
-                        <td><textarea>000123</textarea></td>
+                        <td>
+                            <textarea>000123</textarea>
+                        </td>
                     </tr>
                     <tr>
                         <td class="meta-head">Faktura Datum</td>
-                        <td><textarea id="date">December 15, 2009</textarea></td>
+                        <td>
+                            <textarea id="date">December 15, 2009</textarea>
+                        </td>
                     </tr>
                 </table>
             </div>
             <table id="items">
-		
-                    <tr>
-                        <th>Specifikation</th>
-                        <th>Antal</th>
-                        <th>Enhet</th>
-                        <th>Pris</th>
-                        <th>Summa</th>
-                    </tr>
-                    
-                    <tr class="item-row">
-                        <td class="item-name"><div class="delete-wpr"><textarea>Design Av Webbsida</textarea>
-                       <!--     <a class="delete" href="javascript:;" title="Remove row">X</a></div></td>-->
-                        <td class="description"><textarea>1</textarea></td>
-                        <td><textarea class="cost">St.</textarea></td>
-                        <td><textarea class="qty">10 000 Kr</textarea></td>
-                        <td><span class="price">10 000 Kr</span></td>
-                    </tr>
-                    
-                    <tr class="item-row">
-                        <td class="item-name"><div class="delete-wpr"><textarea>Programvara</textarea>
-                         <!--   <a class="delete" href="javascript:;" title="Remove row">X</a></div></td> -->
-                        <td class="description"><textarea>2</textarea></td>
-                        <td><textarea class="cost">St.</textarea></td>
-                        <td><textarea class="qty">2 000 Kr</textarea></td>
-                        <td><span class="price">4 000 Kr</span></td>
-                    </tr>
-                    <!--
+
+                <tr>
+                    <th>Specifikation</th>
+                    <th>Antal</th>
+                    <th>Enhet</th>
+                    <th>Pris</th>
+                    <th>Summa</th>
+                </tr>
+
+                <tr class="item-row">
+                    <td class="item-name">
+                        <div class="delete-wpr">
+                            <textarea>Design Av Webbsida</textarea>
+                            <!--     <a class="delete" href="javascript:;" title="Remove row">X</a></div></td>-->
+                            <td class="description">
+                                <textarea>1</textarea>
+                            </td>
+                            <td>
+                                <textarea class="cost">St.</textarea>
+                            </td>
+                            <td>
+                                <textarea class="qty">10 000 Kr</textarea>
+                            </td>
+                            <td>
+                                <span class="price">10 000 Kr</span>
+                            </td>
+                </tr>
+
+                <tr class="item-row">
+                    <td class="item-name">
+                        <div class="delete-wpr">
+                            <textarea>Programvara</textarea>
+                            <!--   <a class="delete" href="javascript:;" title="Remove row">X</a></div></td> -->
+                            <td class="description">
+                                <textarea>2</textarea>
+                            </td>
+                            <td>
+                                <textarea class="cost">St.</textarea>
+                            </td>
+                            <td>
+                                <textarea class="qty">2 000 Kr</textarea>
+                            </td>
+                            <td>
+                                <span class="price">4 000 Kr</span>
+                            </td>
+                </tr>
+                <!--
                     <tr id="hiderow">
                       <td colspan="5"><a id="addrow" href="javascript:;" title="Add a row">Add a row</a></td>
                     </tr>
                 -->
-                    <tr>
-                        <td colspan="2" class="blank"> </td>
-                        <td colspan="2" class="total-line">Summa</td>
-                        <td class="total-value"><div id="subtotal">14 000 Kr</div></td>
+                <tr>
+                    <td colspan="2" class="blank"> </td>
+                    <td colspan="2" class="total-line">Summa</td>
+                    <td class="total-value">
+                        <div id="subtotal">14 000 Kr</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="blank"> </td>
+                    <td colspan="2" class="total-line">Moms(25%)</td>
+                    <td class="total-value">
+                        <textarea id="paid">3 500 Kr</textarea>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td colspan="2" class="blank" style="padding:25px;"> </td>
+                    <td colspan="2" class="total-line"></td>
+                    <td class="total-value">
+                        <div id="total"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="blank"> </td>
+                    <td colspan="2" class="total-line balance">Att Betala</td>
+                    <td class="total-value balance">
+                        <div class="due">17 500 Kr</div>
+                    </td>
+                </tr>
+                </div>
+            </table>
+
+            <div>
+                <table>
+                    <td>
+                        <h5>Ricoh Sverige AB</h5>
+                    </td>
+                    <td>
+                        <h5>Kontakt Uppgifter</h5>
+                    </td>
+                    <td>
+                        <h5>Betalnings Uppgifter</h5>
+                    </td>>
+                    <tr class="">
+                        <td class="table2">
+                            <textarea class="table2">Företagsgatan 2 
+ 123 45 Hemstad
+Org.nr. 123456-7890
+Momsreg.nr. SE1234567890
+                            </textarea>
+                            <td class="table2">
+                                <textarea class="table2">
+Freddy Företagare
+Tel. 070-1234567
+Epost: freddy@foretag.se
+www.foretag.se
+                            </textarea>
+                            </td>
+                            <td class="table2">
+                                <textarea class="table2">Plusgiro : 1234567-8 
+Bankgiro : 123-4567</textarea>
+                            </td>
                     </tr>
-                    <!--
-                    <tr>
-          
-                        <td colspan="2" class="blank"> </td>
-                        <td colspan="2" class="total-line">Total</td>
-                        <td class="total-value"><div id="total">$875.00</div></td>
-                    </tr>
-                -->
-                    <tr>
-                        <td colspan="2" class="blank"> </td>
-                        <td colspan="2" class="total-line">Moms(25%)</td>
-                        <td class="total-value"><textarea id="paid">3 500 Kr</textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="blank"> </td>
-                        <td colspan="2" class="total-line balance">Att Betala</td>
-                        <td class="total-value balance"><div class="due">17 500 Kr</div></td>
-                    </tr>
-                  
-                  </table>
-        </div>
+                </table>
+            </div>
 </body>
 
 </html>
