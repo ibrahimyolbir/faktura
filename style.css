@@ -70,4 +70,13 @@ textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.
     vertical-align: top;
     font: 14px Georgia, Serif;
     text-align: left;
+    padding-left: 20px;
     }
+
+    .table3{
+        border: 0; 
+        vertical-align: top;
+        font: 14px Georgia, Serif;
+        text-align: left;
+        padding-left: 40px;
+        }
